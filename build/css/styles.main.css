@@ -76,3 +76,65 @@ header .nav-wrap .quote p {
   line-height: 75px;
   text-transform: uppercase;
 }
+main .services {
+  padding: 80px 0 77px 0;
+  background-color: #4bcaff;
+}
+main .services h3 {
+  margin: 0 0 123px 0;
+  position: relative;
+  color: #fff;
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+main .services h3:after {
+  content: "";
+  position: absolute;
+  left: 2%;
+  bottom: -35%;
+  width: 45px;
+  height: 2px;
+  background-color: #fff;
+}
+main .services .description h5 {
+  position: relative;
+  color: #fff;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+main .services .description h5:before {
+  content: "";
+  position: absolute;
+  top: -300%;
+  width: 48px;
+  height: 48px;
+  background-image: url(../../img/sprite/sprite.png);
+  background-repeat: no-repeat;
+}
+main .services .description .post-one:before {
+  width: 34px;
+  height: 48px;
+  background-position: -177px 0;
+}
+main .services .description .post-two:before {
+  background-position: -128px -48px;
+}
+main .services .description .post-three:before {
+  background-position: 0 -128px;
+}
+main .services .description .post-four:before {
+  background-position: -128px 0;
+}
+main .services .description p {
+  color: #fff;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
