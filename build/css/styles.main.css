@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  height: 800px;
+  background-image: url(../../img/header-bg-pic.png);
+}
+header .nav-wrap {
+  padding-top: 54px;
+  height: 150px;
+  background-color: #454f58;
+  opacity: 0.85;
+}
+header .nav-wrap nav {
+  margin-bottom: 270px;
+}
+header .nav-wrap nav h1 {
+  margin-top: 0;
+}
+header .nav-wrap nav h1 a {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+header .nav-wrap nav h1 a span {
+  color: #4bcaff;
+}
+header .nav-wrap nav .nav-menu {
+  padding-top: 5px;
+}
+header .nav-wrap nav .nav-menu li {
+  padding: 0 20px;
+  border: 2px solid transparent;
+  margin-right: 30px;
+  height: 35px;
+  display: inline-block;
+}
+header .nav-wrap nav .nav-menu li:hover {
+  border: 2px solid #4bcaff;
+}
+header .nav-wrap nav .nav-menu li:hover a {
+  color: #4bcaff;
+}
+header .nav-wrap nav .nav-menu li a {
+  color: #fff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+header .nav-wrap nav .nav-menu .checking {
+  border: 2px solid #4bcaff;
+}
+header .nav-wrap nav .nav-menu .checking a {
+  color: #4bcaff;
+}
+header .nav-wrap .quote {
+  text-align: center;
+}
+header .nav-wrap .quote p {
+  color: #fff;
+  font-family: "Segoe UI";
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 75px;
+  text-transform: uppercase;
+}

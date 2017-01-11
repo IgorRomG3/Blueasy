@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
   connect = require('gulp-connect'),
 	less = require('gulp-less'),
-	includer = require('gulp-htmlincluder');
+	includer = require('gulp-htmlincluder'),
+	spritesmith = require('gulp.spritesmith');
 //	cleanCSS = require('gulp-clean-css'),
 //    htmlmin = require('gulp-htmlmin');
 
@@ -31,6 +32,13 @@ gulp.task('move', function () {
 	.pipe(gulp.dest('build/img/'))
 	.pipe(connect.reload());
 		
+});
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('dev/img/sprite/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.css'
+  }));
+  return spriteData.pipe(gulp.dest('dev/img/sprite/'));
 });
 
 //gulp.task('minify-css', function() {
