@@ -5,26 +5,23 @@
 ul {
   list-style: none;
 }
-a {
-  text-decoration: none;
-}
 header {
   height: 800px;
-  background-image: url(../../img/header-bg-pic.png);
+  background-image: url(../img/header-bg-pic.png);
 }
-header .nav-wrap {
+.nav-wrap {
   padding-top: 54px;
   height: 150px;
   background-color: #454f58;
   opacity: 0.85;
 }
-header .nav-wrap nav {
+nav {
   margin-bottom: 270px;
 }
-header .nav-wrap nav h1 {
+h1 {
   margin-top: 0;
 }
-header .nav-wrap nav h1 a {
+h1 a {
   font-family: "Segoe UI";
   font-size: 30px;
   font-weight: 700;
@@ -32,43 +29,43 @@ header .nav-wrap nav h1 a {
   text-transform: uppercase;
   color: #fff;
 }
-header .nav-wrap nav h1 a span {
+h1 a span {
   color: #4bcaff;
 }
-header .nav-wrap nav .nav-menu {
+.menu {
   padding-top: 5px;
 }
-header .nav-wrap nav .nav-menu li {
-  padding: 0 20px;
+.menu li {
+  padding: 0 15px;
   border: 2px solid transparent;
   margin-right: 30px;
   height: 35px;
   display: inline-block;
 }
-header .nav-wrap nav .nav-menu li:hover {
+.menu li:hover {
   border: 2px solid #4bcaff;
 }
-header .nav-wrap nav .nav-menu li:hover a {
+.menu li:hover a {
   color: #4bcaff;
 }
-header .nav-wrap nav .nav-menu li a {
+.menu li a {
   color: #fff;
   font-family: "Segoe UI";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 34px;
   text-transform: uppercase;
 }
-header .nav-wrap nav .nav-menu .checking {
+.menu .checking {
   border: 2px solid #4bcaff;
 }
-header .nav-wrap nav .nav-menu .checking a {
+.menu .checking a {
   color: #4bcaff;
 }
-header .nav-wrap .quote {
+.quote {
   text-align: center;
 }
-header .nav-wrap .quote p {
+.quote p {
   color: #fff;
   font-family: "Segoe UI";
   font-size: 42px;
@@ -76,11 +73,10 @@ header .nav-wrap .quote p {
   line-height: 75px;
   text-transform: uppercase;
 }
-main .services {
-  padding: 80px 0 77px 0;
-  background-color: #4bcaff;
+.floors {
+  padding: 80px 0;
 }
-main .services h3 {
+.head {
   margin: 0 0 123px 0;
   position: relative;
   color: #fff;
@@ -90,7 +86,7 @@ main .services h3 {
   line-height: 24px;
   text-transform: uppercase;
 }
-main .services h3:after {
+.head:after {
   content: "";
   position: absolute;
   left: 2%;
@@ -99,7 +95,14 @@ main .services h3:after {
   height: 2px;
   background-color: #fff;
 }
-main .services .description h5 {
+.white-bg {
+  color: #67737a;
+}
+.services {
+  padding: 80px 0;
+  background-color: #4bcaff;
+}
+.services .description h5 {
   position: relative;
   color: #fff;
   font-family: "Segoe UI";
@@ -108,33 +111,270 @@ main .services .description h5 {
   line-height: 24px;
   text-transform: uppercase;
 }
-main .services .description h5:before {
+.services .description h5:before {
   content: "";
   position: absolute;
   top: -300%;
   width: 48px;
   height: 48px;
-  background-image: url(../../img/sprite/sprite.png);
+  background-image: url(../img/sprite/sprite.png);
   background-repeat: no-repeat;
 }
-main .services .description .post-one:before {
+.services .description .post-one:before {
   width: 34px;
   height: 48px;
   background-position: -177px 0;
 }
-main .services .description .post-two:before {
+.services .description .post-two:before {
   background-position: -128px -48px;
 }
-main .services .description .post-three:before {
+.services .description .post-three:before {
   background-position: 0 -128px;
 }
-main .services .description .post-four:before {
+.services .description .post-four:before {
   background-position: -128px 0;
 }
-main .services .description p {
+.services .description p {
   color: #fff;
   font-family: "Segoe UI";
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
+}
+.portfolio .head:after {
+  background-color: #67737a;
+}
+.portfolio .portf a {
+  color: #515f67;
+}
+.portfolio .portf .checking a {
+  color: #4bcaff;
+}
+.portfolio .portf-img {
+  margin-bottom: 30px;
+  height: 270px;
+  position: relative;
+}
+.portfolio .portf-img a.add {
+  position: absolute;
+  display: none;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.portfolio .portf-img:hover {
+  background-color: #3c454d;
+  opacity: 0.9;
+}
+.portfolio .portf-img:hover a {
+  top: 50%;
+  left: 40%;
+  display: block;
+}
+.portfolio .one {
+  background-image: url(../img/potf-pic-1.png);
+}
+.portfolio .two {
+  background-image: url(../img/portf-pic-2.png);
+}
+.portfolio .three {
+  background-image: url(../img/portf-pic-3.png);
+}
+.portfolio .four {
+  background-image: url(../img/portf-pic-4.png);
+}
+.portfolio .five {
+  background-image: url(../img/portf-pic-5.png);
+}
+.portfolio .six {
+  background-image: url(../img/portf-pic-6.png);
+}
+.portfolio .seven {
+  background-image: url(../img/portf-pic-7.png);
+}
+.portfolio .eight {
+  background-image: url(../img/portf-pic-8.png);
+}
+.section {
+  background-color: #515f67;
+}
+.section .head {
+  margin-bottom: 50px;
+}
+.section p {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.section .visit {
+  margin-top: 36px;
+  width: 140px;
+  height: 45px;
+  border: 2px solid #353f46;
+  text-align: center;
+}
+.section .visit a {
+  color: #353f46;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+.section .video {
+  height: 313px;
+  background-image: url(../img/vimeo.png);
+}
+.twitter {
+  position: relative;
+  background-color: #4bcaff;
+}
+.twitter .head {
+  margin-bottom: 50px;
+}
+.twitter .head:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 98%;
+  width: 28px;
+  height: 22px;
+  background-image: url(../img/twitter.png);
+  background-color: transparent;
+}
+.twitter p {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 50px;
+  font-family: "Segoe UI";
+  font-weight: 300;
+}
+.twitter p a {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 50px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+}
+.john-doe {
+  background-image: url(../img/main-bg-1.png);
+  background-position: center;
+}
+.john-doe p {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.john-doe .networks li {
+  margin-right: 20px;
+  display: inline-block;
+}
+.john-doe .networks li a {
+  width: 64px;
+  height: 64px;
+  display: block;
+  background-image: url(../img/sprite/sprite.png);
+}
+.john-doe .networks li .twit-contact {
+  background-position: -64px -64px;
+}
+.john-doe .networks li .google {
+  background-position: 0 -64px;
+}
+.john-doe .networks li .coffee {
+  background-position: -64px 0;
+}
+.testimonials .head {
+  margin-bottom: 50px;
+}
+.testimonials p {
+  color: #515f67;
+  font-family: "Segoe UI";
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+}
+.testimonials blockquote {
+  padding: 0;
+  border: 0;
+}
+.testimonials blockquote .block-footer {
+  color: #4bcaff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.contact {
+  background-image: url(../img/main-bg-2.png);
+  background-position: center;
+}
+.contact label {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.contact input,
+.contact textarea {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 0;
+}
+.contact input {
+  height: 60px;
+}
+.contact p {
+  margin-bottom: 39px;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.contact address {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.contact button {
+  margin-top: 40px;
+  width: 370px;
+  height: 60px;
+  background-color: #4bcaff;
+  border-radius: 0;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.footer {
+  padding: 85px 0 80px 0;
+  background-color: #353f47;
+}
+.footer li {
+  padding: 0 10px;
+  display: inline-block;
+  border-right: 2px solid #4a565f;
+}
+.footer a {
+  color: #515f67;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
 }

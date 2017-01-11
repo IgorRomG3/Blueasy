@@ -14,7 +14,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('less', function () {
-  return gulp.src('dev/less/*.less')
+  return gulp.src('dev/less/styles.main.less')
     .pipe(less())
     .pipe(gulp.dest('build/css'))
 	.pipe(connect.reload());
