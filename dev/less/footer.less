@@ -1,10 +1,25 @@
 .footer {
 	padding: 85px 0 80px 0;
 	background-color: #353f47;
-	li {
-		padding: 0 10px;
-		display: inline-block;
-		border-right: 2px solid #4a565f;
+	@media (max-width: 768px) {
+		padding: 20px 0;
+	}
+	ul {
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+		li {
+			@media (max-width: 768px) {
+				display: block;
+				border: 0;
+				&:last-child {
+					border-bottom: 1px solid #4a565f;
+				}
+			}
+			padding: 0 10px;
+			display: inline-block;
+			border-right: 2px solid #4a565f;
+		}
 	}
 	a {
 		color: #515f67;
@@ -13,5 +28,12 @@
 		font-weight: 600;
 		line-height: 24px;
 		text-transform: uppercase;
+	}
+	.copyright {
+		float: right;
+		@media (max-width: 768px) {
+			float: none;
+			text-align: center;
+		}
 	}
 }
