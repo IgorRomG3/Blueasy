@@ -1,373 +1,375 @@
-.floors {
-	padding: 80px 0;
-}
-.head {
-	@media (max-width: 991px) {
-		text-align: center;
+main {
+	.floors {
+		padding: 80px 0;
 	}
-		margin: 0 0 123px 0;
-		position: relative;
-		color: #fff;
-		font-family: "Segoe UI";
-		font-size: 30px;
-		font-weight: 300;
-		line-height: 24px;
-		text-transform: uppercase;
-		&:after {
-			content: "";
-			position: absolute;
-			left: 2%;
-			bottom: -35%;
-
-			width: 45px;
-			height: 2px;
-			background-color: #fff;
+	.head {
+		@media (max-width: 991px) {
+			text-align: center;
 		}
-	}
-.white-bg {
-		color: #67737a;
-	}
-	.center {
-		&:after {
-			@media (max-width: 991px) {
-				left: 42%;
-			}
-		}
-	}
-	div.navbar-default {
-		margin: 0;
-		.nav.navbar-nav {
-			li {
-				a {
-					color: #626f76;
-				}
-			}
-		}
-	}
-.services {
-	padding: 80px 0;
-	background-color: @blueasy;
-	.description {
-		h5 {
-			@media (max-width: 991px) {
-				text-align: center;
-			}
+			margin: 0 0 123px 0;
 			position: relative;
 			color: #fff;
 			font-family: "Segoe UI";
-			font-size: 24px;
-			font-weight: 600;
+			font-size: 30px;
+			font-weight: 300;
 			line-height: 24px;
 			text-transform: uppercase;
-			&:before {
+			&:after {
 				content: "";
 				position: absolute;
-				top:-300%;
+				left: 2%;
+				bottom: -35%;
 
-				width: 48px;
-				height: 48px;
+				width: 45px;
+				height: 2px;
+				background-color: #fff;
+			}
+		}
+	.white-bg {
+			color: #67737a;
+		}
+		.center {
+			&:after {
+				@media (max-width: 991px) {
+					left: 42%;
+				}
+			}
+		}
+		div.navbar-default {
+			margin: 0;
+			.nav.navbar-nav {
+				li {
+					a {
+						color: #626f76;
+					}
+				}
+			}
+		}
+	.services {
+		padding: 80px 0;
+		background-color: @blueasy;
+		.description {
+			h5 {
+				@media (max-width: 991px) {
+					text-align: center;
+				}
+				position: relative;
+				color: #fff;
+				font-family: "Segoe UI";
+				font-size: 24px;
+				font-weight: 600;
+				line-height: 24px;
+				text-transform: uppercase;
+				&:before {
+					content: "";
+					position: absolute;
+					top:-300%;
 
-				background-image: url(../img/sprite/sprite.png);
-				background-repeat: no-repeat;
+					width: 48px;
+					height: 48px;
+
+					background-image: url(../img/sprite/sprite.png);
+					background-repeat: no-repeat;
+				}
+			}
+			.post-one {
+				&:before {
+					width: 34px;
+					height: 48px;
+					background-position: -177px 0;
+				}
+			}
+			.post-two {
+				&:before {
+					background-position: -128px -48px;
+				}
+			}
+			.post-three {
+				&:before {
+					background-position: 0 -128px;
+				}
+			}
+			.post-four {
+				&:before {
+					background-position: -128px 0;
+				}
+			}
+			p {
+				@media (max-width: 991px) {
+					text-align: center;
+				}
+				color: #fff;
+				font-family: "Segoe UI";
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 18px;
 			}
 		}
-		.post-one {
-			&:before {
-				width: 34px;
-				height: 48px;
-				background-position: -177px 0;
+		.indent-xs {
+			@media (max-width: 991px) {
+				margin-bottom: 80px;
 			}
 		}
-		.post-two {
-			&:before {
-				background-position: -128px -48px;
+	}
+	.portfolio {
+		.head {
+			&:after {
+				background-color: #67737a;
 			}
 		}
-		.post-three {
-			&:before {
-				background-position: 0 -128px;
+		.nav.navbar-nav {
+				a {
+					color: #515f67;
+				}
+				.checking {
+					a {
+						color: @blueasy;
+					}
+				}
+		}
+		.portf-img {
+			margin-bottom: 30px;
+			height: 270px;
+			position: relative;
+			background-size: cover;
+			a.add {
+				position: absolute;
+				display: none;
+				color: #ffffff;
+				font-family: "Segoe UI";
+				font-size: 72px;
+				font-weight: 300;
+				line-height: 24px;
+				text-transform: uppercase;
+			}
+			&:hover {
+				a {
+					top: 50%;
+					left: 40%;
+					display: block;
+				}
+				background-color: #3c454d;
+				opacity: 0.9;
 			}
 		}
-		.post-four {
-			&:before {
-				background-position: -128px 0;
-			}
+		.one {
+			background-image: url(../img/potf-pic-1.png);
+		}
+		.two {
+			background-image: url(../img/portf-pic-2.png);
+		}
+		.three {
+			background-image: url(../img/portf-pic-3.png);
+		}
+		.four {
+			background-image: url(../img/portf-pic-4.png);
+		}
+		.five {
+			background-image: url(../img/portf-pic-5.png);
+		}
+		.six {
+			background-image: url(../img/portf-pic-6.png);
+		}
+		.seven {
+			background-image: url(../img/portf-pic-7.png);
+		}
+		.eight {
+			background-image: url(../img/portf-pic-8.png);
+		}
+	}
+	.section {
+		background-color: #515f67;
+		.head {
+			margin-bottom: 50px;
 		}
 		p {
 			@media (max-width: 991px) {
 				text-align: center;
 			}
-			color: #fff;
-			font-family: "Segoe UI";
-			font-size: 12px;
-			font-weight: 600;
-			line-height: 18px;
-		}
-	}
-	.indent-xs {
-		@media (max-width: 991px) {
-			margin-bottom: 80px;
-		}
-	}
-}
-.portfolio {
-	.head {
-		&:after {
-			background-color: #67737a;
-		}
-	}
-	.nav.navbar-nav {
-			a {
-				color: #515f67;
-			}
-			.checking {
-				a {
-					color: @blueasy;
-				}
-			}
-	}
-	.portf-img {
-		margin-bottom: 30px;
-		height: 270px;
-		position: relative;
-		background-size: cover;
-		a.add {
-			position: absolute;
-			display: none;
 			color: #ffffff;
 			font-family: "Segoe UI";
-			font-size: 72px;
-			font-weight: 300;
-			line-height: 24px;
-			text-transform: uppercase;
-		}
-		&:hover {
-			a {
-				top: 50%;
-				left: 40%;
-				display: block;
-			}
-			background-color: #3c454d;
-			opacity: 0.9;
-		}
-	}
-	.one {
-		background-image: url(../img/potf-pic-1.png);
-	}
-	.two {
-		background-image: url(../img/portf-pic-2.png);
-	}
-	.three {
-		background-image: url(../img/portf-pic-3.png);
-	}
-	.four {
-		background-image: url(../img/portf-pic-4.png);
-	}
-	.five {
-		background-image: url(../img/portf-pic-5.png);
-	}
-	.six {
-		background-image: url(../img/portf-pic-6.png);
-	}
-	.seven {
-		background-image: url(../img/portf-pic-7.png);
-	}
-	.eight {
-		background-image: url(../img/portf-pic-8.png);
-	}
-}
-.section {
-	background-color: #515f67;
-	.head {
-		margin-bottom: 50px;
-	}
-	p {
-		@media (max-width: 991px) {
-			text-align: center;
-		}
-		color: #ffffff;
-		font-family: "Segoe UI";
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 24px;
-	}
-	.visit {
-		@media (max-width: 991px) {
-			margin: 10px auto;
-
-		}
-		margin-top: 36px;
-		width: 140px;
-		height: 45px;
-		border: 2px solid #353f46;
-		text-align: center;
-		a {
-			color: #353f46;
-			font-family: "Segoe UI";
 			font-size: 14px;
-			font-weight: 700;
-			line-height: 44px;
-			text-transform: uppercase;
+			font-weight: 400;
+			line-height: 24px;
 		}
-	}
-}
-.twit-bg {
-	background-color: @blueasy;
-}
-.twitter {
-	position: relative;
-	background-color: @blueasy;
-	.head {
-		margin-bottom: 50px;
-		&:after {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 98%;
+		.visit {
+			@media (max-width: 991px) {
+				margin: 10px auto;
 
-			width: 28px;
-			height: 22px;
-			background-image: url(../img/twitter.png);
-			background-color: transparent;
+			}
+			margin-top: 36px;
+			width: 140px;
+			height: 45px;
+			border: 2px solid #353f46;
+			text-align: center;
+			a {
+				color: #353f46;
+				font-family: "Segoe UI";
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 44px;
+				text-transform: uppercase;
+			}
 		}
 	}
-	p {
-		color: #ffffff;
-		font-size: 28px;
-		line-height: 50px;
-		font-family: "Segoe UI";
-		font-weight: 300;
-		a {
+	.twit-bg {
+		background-color: @blueasy;
+	}
+	.twitter {
+		position: relative;
+		background-color: @blueasy;
+		.head {
+			margin-bottom: 50px;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 98%;
+
+				width: 28px;
+				height: 22px;
+				background-image: url(../img/twitter.png);
+				background-color: transparent;
+			}
+		}
+		p {
 			color: #ffffff;
 			font-size: 28px;
 			line-height: 50px;
 			font-family: "Segoe UI";
-			font-weight: 600;
-		}
-	}
-}
-.john-doe {
-	background-image: url(../img/main-bg-1.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	p {
-		@media (max-width: 991px) {
-			text-align: center;
-		}
-		color: #ffffff;
-		font-family: "Segoe UI";
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 24px;
-	}
-	.networks {
-		@media (max-width: 991px) {
-			text-align: center;
-		}
-		li {
-			margin-right: 5px;
-			display: inline-block;
+			font-weight: 300;
 			a {
-				width: 64px;
-				height: 64px;
-				display: block;
-				background-image: url(../img/sprite/sprite.png);
-			}
-			.twit-contact {
-				background-position: -64px -64px;
-			}
-			.google {
-				background-position: 0 -64px;
-			}
-			.coffee {
-				background-position: -64px 0;
+				color: #ffffff;
+				font-size: 28px;
+				line-height: 50px;
+				font-family: "Segoe UI";
+				font-weight: 600;
 			}
 		}
 	}
-}
-.testimonials {
-	.head {
-		margin-bottom: 50px;
+	.john-doe {
+		background-image: url(../img/main-bg-1.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		p {
+			@media (max-width: 991px) {
+				text-align: center;
+			}
+			color: #ffffff;
+			font-family: "Segoe UI";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+		.networks {
+			@media (max-width: 991px) {
+				text-align: center;
+			}
+			li {
+				margin-right: 5px;
+				display: inline-block;
+				a {
+					width: 64px;
+					height: 64px;
+					display: block;
+					background-image: url(../img/sprite/sprite.png);
+				}
+				.twit-contact {
+					background-position: -64px -64px;
+				}
+				.google {
+					background-position: 0 -64px;
+				}
+				.coffee {
+					background-position: -64px 0;
+				}
+			}
+		}
 	}
-	p {
-		color: #515f67;
-		font-family: "Segoe UI";
-		font-size: 28px;
-		font-weight: 300;
-		line-height: 50px;
+	.testimonials {
+		.head {
+			margin-bottom: 50px;
+		}
+		p {
+			color: #515f67;
+			font-family: "Segoe UI";
+			font-size: 28px;
+			font-weight: 300;
+			line-height: 50px;
+		}
+		blockquote {
+			padding: 0;
+			border: 0;
+			.block-footer {
+				color: @blueasy;
+				font-family: "Segoe UI";
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 50px;
+			}
+		}
 	}
-	blockquote {
-		padding: 0;
-		border: 0;
-		.block-footer {
-			color: @blueasy;
+	.contact {
+		background-image: url(../img/main-bg-2.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		h3 {
+			margin-bottom: 30px;
+		}
+		label {
+			color: #ffffff;
 			font-family: "Segoe UI";
 			font-size: 14px;
 			font-weight: 700;
-			line-height: 50px;
+			line-height: 24px;
+			text-transform: uppercase;
 		}
-	}
-}
-.contact {
-	background-image: url(../img/main-bg-2.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	h3 {
-		margin-bottom: 30px;
-	}
-	label {
-		color: #ffffff;
-		font-family: "Segoe UI";
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 24px;
-		text-transform: uppercase;
-	}
-	input,
-	textarea {
-		border: 2px solid #ffffff;
-		background-color: transparent;
-		border-radius: 0;
-	}
-	input {
-		height: 60px;
-	}
-	p {
-		@media (max-width: 991px) {
-			margin: 5px;
+		input,
+		textarea {
+			border: 2px solid #ffffff;
+			background-color: transparent;
+			border-radius: 0;
 		}
-		margin-bottom: 39px;
-		color: #ffffff;
-		font-family: "Segoe UI";
-		font-size: 12px;
-		font-weight: 600;
-		line-height: 24px;
-	}
-	address {
-		color: #ffffff;
-		font-family: "Segoe UI";
-		font-size: 12px;
-		font-weight: 600;
-		line-height: 24px;
-	}
-	button {
-		@media (max-width: 991px) {
-			display: block;
-			margin: 30px auto 0;
+		input {
+			height: 60px;
 		}
-		margin-top: 40px;
-		width: 60%;
-		height: 60px;
-		background-color: @blueasy;
-		border-radius: 0;
+		p {
+			@media (max-width: 991px) {
+				margin: 5px;
+			}
+			margin-bottom: 39px;
+			color: #ffffff;
+			font-family: "Segoe UI";
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 24px;
+		}
+		address {
+			color: #ffffff;
+			font-family: "Segoe UI";
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 24px;
+		}
+		button {
+			@media (max-width: 991px) {
+				display: block;
+				margin: 30px auto 0;
+			}
+			margin-top: 40px;
+			width: 60%;
+			height: 60px;
+			background-color: @blueasy;
+			border-radius: 0;
 
-		color: #ffffff;
-		font-family: "Segoe UI";
-		font-size: 14px;
-		font-weight: 700;
-		line-height: 24px;
-		text-transform: uppercase;
+			color: #ffffff;
+			font-family: "Segoe UI";
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 24px;
+			text-transform: uppercase;
+		}
 	}
 }

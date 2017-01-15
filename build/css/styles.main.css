@@ -5,51 +5,6 @@
 ul {
   list-style: none;
 }
-header {
-  height: 800px;
-  background-image: url(../img/header-bg-pic.png);
-}
-.nav-wrap {
-  padding-top: 54px;
-  height: 150px;
-  background-color: #454f58;
-  opacity: 0.85;
-}
-.navigation {
-  margin-bottom: 270px;
-}
-@media (max-width: 991px) {
-  .navigation {
-    margin-bottom: 150px;
-  }
-}
-@media (max-width: 991px) {
-  .logo {
-    text-align: center;
-  }
-}
-.logo h1 {
-  margin-top: 0;
-}
-.logo h1 a {
-  font-family: "Segoe UI";
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #fff;
-}
-.logo h1 a:hover {
-  color: #fff;
-}
-.logo h1 a span {
-  color: #4bcaff;
-}
-@media (max-width: 991px) {
-  nav.navbar-default {
-    margin: 0 auto;
-  }
-}
 .navbar-default {
   margin-right: -30px;
   float: right;
@@ -90,10 +45,55 @@ header {
 .navbar-default .nav.navbar-nav .checking a {
   color: #4bcaff;
 }
-.quote {
+header {
+  height: 800px;
+  background-image: url(../img/header-bg-pic.png);
+}
+header .nav-wrap {
+  padding-top: 54px;
+  height: 150px;
+  background-color: #454f58;
+  opacity: 0.85;
+}
+header .navigation {
+  margin-bottom: 270px;
+}
+@media (max-width: 991px) {
+  header .navigation {
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 991px) {
+  header .logo {
+    text-align: center;
+  }
+}
+header .logo h1 {
+  margin-top: 0;
+}
+header .logo h1 a {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+header .logo h1 a:hover {
+  color: #fff;
+}
+header .logo h1 a span {
+  color: #4bcaff;
+}
+@media (max-width: 991px) {
+  header nav.navbar-default {
+    margin: 0 auto;
+  }
+}
+header .quote {
   text-align: center;
 }
-.quote p {
+header .quote p {
   color: #fff;
   font-family: "Segoe UI";
   font-size: 42px;
@@ -101,10 +101,10 @@ header {
   line-height: 75px;
   text-transform: uppercase;
 }
-.floors {
+main .floors {
   padding: 80px 0;
 }
-.head {
+main .head {
   margin: 0 0 123px 0;
   position: relative;
   color: #fff;
@@ -115,11 +115,11 @@ header {
   text-transform: uppercase;
 }
 @media (max-width: 991px) {
-  .head {
+  main .head {
     text-align: center;
   }
 }
-.head:after {
+main .head:after {
   content: "";
   position: absolute;
   left: 2%;
@@ -128,25 +128,25 @@ header {
   height: 2px;
   background-color: #fff;
 }
-.white-bg {
+main .white-bg {
   color: #67737a;
 }
 @media (max-width: 991px) {
-  .center:after {
+  main .center:after {
     left: 42%;
   }
 }
-div.navbar-default {
+main div.navbar-default {
   margin: 0;
 }
-div.navbar-default .nav.navbar-nav li a {
+main div.navbar-default .nav.navbar-nav li a {
   color: #626f76;
 }
-.services {
+main .services {
   padding: 80px 0;
   background-color: #4bcaff;
 }
-.services .description h5 {
+main .services .description h5 {
   position: relative;
   color: #fff;
   font-family: "Segoe UI";
@@ -156,11 +156,11 @@ div.navbar-default .nav.navbar-nav li a {
   text-transform: uppercase;
 }
 @media (max-width: 991px) {
-  .services .description h5 {
+  main .services .description h5 {
     text-align: center;
   }
 }
-.services .description h5:before {
+main .services .description h5:before {
   content: "";
   position: absolute;
   top: -300%;
@@ -169,21 +169,21 @@ div.navbar-default .nav.navbar-nav li a {
   background-image: url(../img/sprite/sprite.png);
   background-repeat: no-repeat;
 }
-.services .description .post-one:before {
+main .services .description .post-one:before {
   width: 34px;
   height: 48px;
   background-position: -177px 0;
 }
-.services .description .post-two:before {
+main .services .description .post-two:before {
   background-position: -128px -48px;
 }
-.services .description .post-three:before {
+main .services .description .post-three:before {
   background-position: 0 -128px;
 }
-.services .description .post-four:before {
+main .services .description .post-four:before {
   background-position: -128px 0;
 }
-.services .description p {
+main .services .description p {
   color: #fff;
   font-family: "Segoe UI";
   font-size: 12px;
@@ -191,31 +191,31 @@ div.navbar-default .nav.navbar-nav li a {
   line-height: 18px;
 }
 @media (max-width: 991px) {
-  .services .description p {
+  main .services .description p {
     text-align: center;
   }
 }
 @media (max-width: 991px) {
-  .services .indent-xs {
+  main .services .indent-xs {
     margin-bottom: 80px;
   }
 }
-.portfolio .head:after {
+main .portfolio .head:after {
   background-color: #67737a;
 }
-.portfolio .nav.navbar-nav a {
+main .portfolio .nav.navbar-nav a {
   color: #515f67;
 }
-.portfolio .nav.navbar-nav .checking a {
+main .portfolio .nav.navbar-nav .checking a {
   color: #4bcaff;
 }
-.portfolio .portf-img {
+main .portfolio .portf-img {
   margin-bottom: 30px;
   height: 270px;
   position: relative;
   background-size: cover;
 }
-.portfolio .portf-img a.add {
+main .portfolio .portf-img a.add {
   position: absolute;
   display: none;
   color: #ffffff;
@@ -225,46 +225,46 @@ div.navbar-default .nav.navbar-nav li a {
   line-height: 24px;
   text-transform: uppercase;
 }
-.portfolio .portf-img:hover {
+main .portfolio .portf-img:hover {
   background-color: #3c454d;
   opacity: 0.9;
 }
-.portfolio .portf-img:hover a {
+main .portfolio .portf-img:hover a {
   top: 50%;
   left: 40%;
   display: block;
 }
-.portfolio .one {
+main .portfolio .one {
   background-image: url(../img/potf-pic-1.png);
 }
-.portfolio .two {
+main .portfolio .two {
   background-image: url(../img/portf-pic-2.png);
 }
-.portfolio .three {
+main .portfolio .three {
   background-image: url(../img/portf-pic-3.png);
 }
-.portfolio .four {
+main .portfolio .four {
   background-image: url(../img/portf-pic-4.png);
 }
-.portfolio .five {
+main .portfolio .five {
   background-image: url(../img/portf-pic-5.png);
 }
-.portfolio .six {
+main .portfolio .six {
   background-image: url(../img/portf-pic-6.png);
 }
-.portfolio .seven {
+main .portfolio .seven {
   background-image: url(../img/portf-pic-7.png);
 }
-.portfolio .eight {
+main .portfolio .eight {
   background-image: url(../img/portf-pic-8.png);
 }
-.section {
+main .section {
   background-color: #515f67;
 }
-.section .head {
+main .section .head {
   margin-bottom: 50px;
 }
-.section p {
+main .section p {
   color: #ffffff;
   font-family: "Segoe UI";
   font-size: 14px;
@@ -272,11 +272,11 @@ div.navbar-default .nav.navbar-nav li a {
   line-height: 24px;
 }
 @media (max-width: 991px) {
-  .section p {
+  main .section p {
     text-align: center;
   }
 }
-.section .visit {
+main .section .visit {
   margin-top: 36px;
   width: 140px;
   height: 45px;
@@ -284,11 +284,11 @@ div.navbar-default .nav.navbar-nav li a {
   text-align: center;
 }
 @media (max-width: 991px) {
-  .section .visit {
+  main .section .visit {
     margin: 10px auto;
   }
 }
-.section .visit a {
+main .section .visit a {
   color: #353f46;
   font-family: "Segoe UI";
   font-size: 14px;
@@ -296,17 +296,17 @@ div.navbar-default .nav.navbar-nav li a {
   line-height: 44px;
   text-transform: uppercase;
 }
-.twit-bg {
+main .twit-bg {
   background-color: #4bcaff;
 }
-.twitter {
+main .twitter {
   position: relative;
   background-color: #4bcaff;
 }
-.twitter .head {
+main .twitter .head {
   margin-bottom: 50px;
 }
-.twitter .head:after {
+main .twitter .head:after {
   content: "";
   position: absolute;
   top: 0;
@@ -316,27 +316,27 @@ div.navbar-default .nav.navbar-nav li a {
   background-image: url(../img/twitter.png);
   background-color: transparent;
 }
-.twitter p {
+main .twitter p {
   color: #ffffff;
   font-size: 28px;
   line-height: 50px;
   font-family: "Segoe UI";
   font-weight: 300;
 }
-.twitter p a {
+main .twitter p a {
   color: #ffffff;
   font-size: 28px;
   line-height: 50px;
   font-family: "Segoe UI";
   font-weight: 600;
 }
-.john-doe {
+main .john-doe {
   background-image: url(../img/main-bg-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.john-doe p {
+main .john-doe p {
   color: #ffffff;
   font-family: "Segoe UI";
   font-size: 14px;
@@ -344,65 +344,65 @@ div.navbar-default .nav.navbar-nav li a {
   line-height: 24px;
 }
 @media (max-width: 991px) {
-  .john-doe p {
+  main .john-doe p {
     text-align: center;
   }
 }
 @media (max-width: 991px) {
-  .john-doe .networks {
+  main .john-doe .networks {
     text-align: center;
   }
 }
-.john-doe .networks li {
+main .john-doe .networks li {
   margin-right: 5px;
   display: inline-block;
 }
-.john-doe .networks li a {
+main .john-doe .networks li a {
   width: 64px;
   height: 64px;
   display: block;
   background-image: url(../img/sprite/sprite.png);
 }
-.john-doe .networks li .twit-contact {
+main .john-doe .networks li .twit-contact {
   background-position: -64px -64px;
 }
-.john-doe .networks li .google {
+main .john-doe .networks li .google {
   background-position: 0 -64px;
 }
-.john-doe .networks li .coffee {
+main .john-doe .networks li .coffee {
   background-position: -64px 0;
 }
-.testimonials .head {
+main .testimonials .head {
   margin-bottom: 50px;
 }
-.testimonials p {
+main .testimonials p {
   color: #515f67;
   font-family: "Segoe UI";
   font-size: 28px;
   font-weight: 300;
   line-height: 50px;
 }
-.testimonials blockquote {
+main .testimonials blockquote {
   padding: 0;
   border: 0;
 }
-.testimonials blockquote .block-footer {
+main .testimonials blockquote .block-footer {
   color: #4bcaff;
   font-family: "Segoe UI";
   font-size: 14px;
   font-weight: 700;
   line-height: 50px;
 }
-.contact {
+main .contact {
   background-image: url(../img/main-bg-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.contact h3 {
+main .contact h3 {
   margin-bottom: 30px;
 }
-.contact label {
+main .contact label {
   color: #ffffff;
   font-family: "Segoe UI";
   font-size: 14px;
@@ -410,16 +410,16 @@ div.navbar-default .nav.navbar-nav li a {
   line-height: 24px;
   text-transform: uppercase;
 }
-.contact input,
-.contact textarea {
+main .contact input,
+main .contact textarea {
   border: 2px solid #ffffff;
   background-color: transparent;
   border-radius: 0;
 }
-.contact input {
+main .contact input {
   height: 60px;
 }
-.contact p {
+main .contact p {
   margin-bottom: 39px;
   color: #ffffff;
   font-family: "Segoe UI";
@@ -428,18 +428,18 @@ div.navbar-default .nav.navbar-nav li a {
   line-height: 24px;
 }
 @media (max-width: 991px) {
-  .contact p {
+  main .contact p {
     margin: 5px;
   }
 }
-.contact address {
+main .contact address {
   color: #ffffff;
   font-family: "Segoe UI";
   font-size: 12px;
   font-weight: 600;
   line-height: 24px;
 }
-.contact button {
+main .contact button {
   margin-top: 40px;
   width: 60%;
   height: 60px;
@@ -453,7 +453,7 @@ div.navbar-default .nav.navbar-nav li a {
   text-transform: uppercase;
 }
 @media (max-width: 991px) {
-  .contact button {
+  main .contact button {
     display: block;
     margin: 30px auto 0;
   }
