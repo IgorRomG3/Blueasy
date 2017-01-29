@@ -6,20 +6,38 @@ ul {
   list-style: none;
 }
 .navbar-default {
-  margin-right: -30px;
-  float: right;
   background-color: transparent;
   border: none;
 }
 .navbar-default button {
   margin: 0;
 }
+.navbar-default h1 {
+  margin-top: 0;
+}
+.navbar-default h1 a {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.navbar-default h1 a:hover {
+  color: #fff;
+}
+.navbar-default h1 a span {
+  color: #4bcaff;
+}
+.navbar-default .nav.navbar-nav {
+  margin-top: 2px;
+  float: right;
+}
 .navbar-default .nav.navbar-nav li {
+  margin-right: 20px;
   padding: 0 15px;
   border: 2px solid transparent;
-  margin-right: 30px;
   height: 35px;
-  display: inline-block;
 }
 .navbar-default .nav.navbar-nav li:last-child {
   margin: 0;
@@ -45,8 +63,18 @@ ul {
 .navbar-default .nav.navbar-nav .checking a {
   color: #4bcaff;
 }
+@media (max-width: 767px) {
+  .navbar-default .nav.navbar-nav {
+    margin-top: 0;
+    float: none;
+  }
+  .navbar-default .nav.navbar-nav li {
+    margin: 0;
+  }
+}
 header {
   height: 800px;
+  position: relative;
   background-image: url(../img/header-bg-pic.png);
 }
 header .nav-wrap {
@@ -55,42 +83,15 @@ header .nav-wrap {
   background-color: #454f58;
   opacity: 0.85;
 }
-header .navigation {
-  margin-bottom: 270px;
-}
-@media (max-width: 991px) {
-  header .navigation {
-    margin-bottom: 150px;
-  }
-}
-@media (max-width: 991px) {
-  header .logo {
-    text-align: center;
-  }
-}
-header .logo h1 {
-  margin-top: 0;
-}
-header .logo h1 a {
-  font-family: "Segoe UI";
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #fff;
-}
-header .logo h1 a:hover {
-  color: #fff;
-}
-header .logo h1 a span {
-  color: #4bcaff;
-}
 @media (max-width: 991px) {
   header nav.navbar-default {
     margin: 0 auto;
   }
 }
 header .quote {
+  position: absolute;
+  top: 40%;
+  left: 10%;
   text-align: center;
 }
 header .quote p {
@@ -100,6 +101,14 @@ header .quote p {
   font-weight: 300;
   line-height: 75px;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  header .quote {
+    left: 0;
+  }
+  header .quote p {
+    font-size: 32px;
+  }
 }
 main .floors {
   padding: 80px 0;
@@ -209,20 +218,42 @@ main .portfolio .head:after {
   background-color: #67737a;
 }
 main .portfolio .nav.nav-pills {
-  margin-right: -30px;
-  float: right;
   background-color: transparent;
   border: none;
+  margin-top: 2px;
+  float: right;
+  margin-top: -5px;
+  /*for cover margin from .nav.navbar-nav*/
 }
 main .portfolio .nav.nav-pills button {
   margin: 0;
 }
+main .portfolio .nav.nav-pills h1 {
+  margin-top: 0;
+}
+main .portfolio .nav.nav-pills h1 a {
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+main .portfolio .nav.nav-pills h1 a:hover {
+  color: #fff;
+}
+main .portfolio .nav.nav-pills h1 a span {
+  color: #4bcaff;
+}
+main .portfolio .nav.nav-pills .nav.navbar-nav {
+  margin-top: 2px;
+  float: right;
+}
 main .portfolio .nav.nav-pills .nav.navbar-nav li {
+  margin-right: 20px;
   padding: 0 15px;
   border: 2px solid transparent;
-  margin-right: 30px;
   height: 35px;
-  display: inline-block;
 }
 main .portfolio .nav.nav-pills .nav.navbar-nav li:last-child {
   margin: 0;
@@ -248,12 +279,20 @@ main .portfolio .nav.nav-pills .nav.navbar-nav .checking {
 main .portfolio .nav.nav-pills .nav.navbar-nav .checking a {
   color: #4bcaff;
 }
+@media (max-width: 767px) {
+  main .portfolio .nav.nav-pills .nav.navbar-nav {
+    margin-top: 0;
+    float: none;
+  }
+  main .portfolio .nav.nav-pills .nav.navbar-nav li {
+    margin: 0;
+  }
+}
 main .portfolio .nav.nav-pills li {
+  margin-right: 20px;
   padding: 0 15px;
   border: 2px solid transparent;
-  margin-right: 30px;
   height: 35px;
-  display: inline-block;
 }
 main .portfolio .nav.nav-pills li:last-child {
   margin: 0;
@@ -278,6 +317,15 @@ main .portfolio .nav.nav-pills .checking {
 }
 main .portfolio .nav.nav-pills .checking a {
   color: #4bcaff;
+}
+@media (max-width: 767px) {
+  main .portfolio .nav.nav-pills {
+    margin-top: 0;
+    float: none;
+  }
+  main .portfolio .nav.nav-pills li {
+    margin: 0;
+  }
 }
 main .portfolio .nav.nav-pills li {
   margin-right: 10px;
@@ -399,7 +447,7 @@ main .section .visit {
 }
 @media (max-width: 991px) {
   main .section .visit {
-    margin: 10px auto;
+    margin: 20px auto;
   }
 }
 main .section .visit a {
@@ -409,6 +457,14 @@ main .section .visit a {
   font-weight: 700;
   line-height: 44px;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  main .section .video {
+    text-align: center;
+  }
+  main .section .video img {
+    display: inline-block;
+  }
 }
 main .twit-bg {
   background-color: #4bcaff;

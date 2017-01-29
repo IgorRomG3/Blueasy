@@ -123,6 +123,7 @@ main {
 		.nav.nav-pills {
 			.navbar-default;
 			.navbar-default > .nav.navbar-nav;
+			margin-top: -5px; /*for cover margin from .nav.navbar-nav*/
 			li {
 					margin-right: 10px;
 				a {
@@ -237,8 +238,7 @@ main {
 		}
 		.visit {
 			@media (max-width: 991px) {
-				margin: 10px auto;
-
+				margin: 20px auto;
 			}
 			margin-top: 36px;
 			width: 140px;
@@ -252,6 +252,14 @@ main {
 				font-weight: 700;
 				line-height: 44px;
 				text-transform: uppercase;
+			}
+		}
+		.video {
+			@media (max-width: 767px) {
+				text-align: center;
+				img {
+					display: inline-block;
+				}
 			}
 		}
 	}
